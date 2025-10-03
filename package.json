@@ -1,0 +1,34 @@
+{
+  "name": "trade-ai",
+  "version": "1.0.0",
+  "description": "TypeScript trading bot with Alpaca API integration",
+  "main": "dist/api/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/api/server.ts",
+    "build": "tsc",
+    "start": "node dist/api/server.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "trading",
+    "bot",
+    "alpaca",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.8.0",
+    "@types/cors": "^2.8.15",
+    "typescript": "^5.2.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
